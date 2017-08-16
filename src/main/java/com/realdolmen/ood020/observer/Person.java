@@ -1,6 +1,6 @@
 package com.realdolmen.ood020.observer;
 
-public class Person { // extends Observable
+public class Person extends Subject{ // extends Subject > info naar uw Person
 
 	private String forename;
 	private String surname;
@@ -32,17 +32,21 @@ public class Person { // extends Observable
 
 	public void setForename(String f) {
 		forename = f;
+		notifyAllObservers();     // Voor elke setter een Notify ingeven
 	}
 
 	public void setSurname(String s) {
 		surname = s;
+		notifyAllObservers();
 	}
 
 	public void setAge(int a) {
 		age = a;
+		notifyAllObservers();
 	}
 
 	public void increaseAge(int n) {
 		age += n;
+		notifyAllObservers();
 	}
 }

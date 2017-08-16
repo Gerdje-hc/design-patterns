@@ -1,6 +1,6 @@
 package com.realdolmen.ood020.proxy;
 
-public interface AbstractMap {
+public interface AbstractMap {  //Map implemets AbstractMap
 
 	public String find(String key) throws Exception;
 

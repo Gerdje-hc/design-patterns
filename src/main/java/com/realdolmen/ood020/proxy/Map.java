@@ -12,7 +12,7 @@ public class Map implements AbstractMap {
 	private String fileName;
 	private final String header = " -- Generated file, do not edit --";
 
-	public Map(String fileName) {
+	public Map(String fileName) {    // maakt een nieuwe file
 		this.fileName = fileName;
 		File file = new File(fileName);
 		// Ensure that the file exists.
